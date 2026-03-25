@@ -97,6 +97,14 @@ async function initData() {
 
     // 1. First, try to load from local file (if exists from previous sync or manual)
     try {
+        if (!window.process.env.PORTABLE_EXECUTABLE_DIR && import.meta.env.DEV) {
+            console.log("Tryb deweloperski: Wyłączono synchronizację z GitHub.");
+            // In dev, we already have penalData imported from ./penal_code.json
+            activePenalData = [...penalData];
+            initApp();
+            return;
+        }
+
         if (fs.existsSync(localPath)) {
             const raw = fs.readFileSync(localPath, 'utf8');
             activePenalData = JSON.parse(raw);
