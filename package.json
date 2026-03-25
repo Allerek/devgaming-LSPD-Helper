@@ -31,8 +31,8 @@
     "compression": "store",
     "asar": true,
     "files": [
-      "main.js",
-      "index.html",
+      "dist-electron/**/*",
+      "dist/**/*",
       "penal_code.json",
       "icon.png",
       "sounds/**/*"
