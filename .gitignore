@@ -19,6 +19,7 @@ upx-*/
 # Personal/Copy files
 penal_code copy.json
 raw_penal_code.txt
+push_release.bat
 *.bak
 
 # OS files

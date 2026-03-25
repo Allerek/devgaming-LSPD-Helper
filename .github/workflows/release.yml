@@ -1,0 +1,66 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies (JS)
+        run: pnpm install
+
+      - name: Install Dependencies (Python)
+        run: |
+          pip install pyinstaller pillow keyboard pystray
+
+      - name: Build Python Overlay
+        run: |
+          pyinstaller --noconsole --onefile --noupx --icon=icon.png lspd_overlay.py
+
+      - name: Build Electron Kartoteka
+        run: |
+          # Resize icon for electron-builder (standardizes the size)
+          python -c "from PIL import Image; img = Image.open('icon.png'); img.resize((256, 256), Image.Resampling.LANCZOS).save('icon.png')"
+          pnpm run build
+
+      - name: Prepare Release Package
+        shell: bash
+        run: |
+          mkdir -p release_package
+          cp dist/lspd_overlay.exe release_package/
+          cp "dist/LSPD Kartoteka "*.exe release_package/
+          cp penal_code.json release_package/
+          cp icon.png release_package/
+          cp -r sounds release_package/
+          cd release_package
+          7z a ../LSPD_Helper_${{ github.ref_name }}.zip ./*
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: LSPD_Helper_${{ github.ref_name }}.zip
+          body: "Automatyczna paczka binarna skompilowana przez GitHub Actions dla wersji ${{ github.ref_name }}."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
