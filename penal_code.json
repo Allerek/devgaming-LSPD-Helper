@@ -1,0 +1,482 @@
+[
+  {
+    "chapter": "Rozdział II - Przestępstwa przeciwko władzy",
+    "articles": [
+      {
+        "id": "126",
+        "title": "KORUPCJA",
+        "categories": ["F", "M"],
+        "description": "Każda osoba oferująca lub przyjmująca dobro materialne lub finansowe w zamian za złamanie prawa, jego nagięcie lub zaniechanie obowiązku służbowego, lub innej korzyści niematerialnej na rzecz osoby oferującej.\n\nJest interpretowane jako FELONY jeśli czyn ma szkodliwość na poziomie urzędowej i państwowej lub dotyczy innego czynu prawnego z kategorii przestępstwa.\nJest interpretowane jako MISDEMEANOR jeśli czyn nie spełnia przesłanek do zakwalifikowania go jako przestępstwo.",
+        "penalties": {
+          "USD": [0, 5500],
+          "Jail": [2, 6]
+        }
+      },
+      {
+        "id": "127",
+        "title": "GROŹBY WOBEC OFICERA POKOJU/URZĘDNIKA/AGENTA",
+        "categories": ["M"],
+        "description": "Każda osoba, która grozi śmiercią lub wyrządzeniem krzywdy, lub innym dotkliwym czynem osobie pełniącej służbę na rzecz ustanowionego obowiązku, w tym oficer pokoju, urzędnik i agent.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 1500],
+          "Jail": [1, 4]
+        }
+      },
+      {
+        "id": "128",
+        "title": "UCIECZKA Z JEDNOSTKI PENITENCJARNEJ",
+        "categories": ["F"],
+        "description": "Każda osoba, która ucieka lub próbuje uciec z placówki penitencjarnej, dalej zwaną więzieniem lub celą czasową w każdej stacji agencji egzekwującej prawo.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [2, 5]
+        }
+      },
+      {
+        "id": "129",
+        "title": "POMOC W PRZESTĘPSTWIE",
+        "categories": ["F", "M"],
+        "description": "Każda osoba, która pomaga w popełnieniu przestępstwa i robi to świadomie lub nieświadomie.\n\nJest interpretowane jako FELONY w przypadku, gdy osoba winna dokonała tego w sposób świadomy.\nJest interpretowane jako MISDEMEANOR w przypadku, gdy osoba winna dokonała tego w sposób nieświadomy.",
+        "penalties": {
+          "USD": [0, 600],
+          "Jail": [1, 5]
+        }
+      },
+      {
+        "id": "130",
+        "title": "FAŁSZYWE DOKUMENTY",
+        "categories": ["F"],
+        "description": "Każda osoba, która posiada, prowadzi dystrybucję lub posługuje się fałszywym dokumentem.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 1000],
+          "Jail": [1, 4]
+        }
+      },
+      {
+        "id": "131",
+        "title": "POŚWIADCZENIE NIEPRAWDY",
+        "categories": ["M"],
+        "description": "Każda osoba, która poświadcza nieprawdę, składa fałszywe zeznania w trakcie procesu sądowego lub posługuje się fałszerstwem w celu oszukania organów sądowniczych.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [2, 3]
+        }
+      },
+      {
+        "id": "132",
+        "title": "NISZCZENIE DOWODÓW",
+        "categories": ["F"],
+        "description": "Każda osoba, która niszczy, manipuluje, zniekształca lub przekształca dowody mogące stanowić dowód w procesie sądowym.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [3, 5]
+        }
+      },
+      {
+        "id": "134",
+        "title": "PRZEKROCZENIE UPRAWNIEŃ",
+        "categories": ["F", "M"],
+        "description": "Każda osoba, która będąc oficere pokoju, agentem lub urzędnikiem na służbie przekracza swoje uprawnienia powodując tym szkodę materialną lub zdrowotną wobec osoby lub przedmiotu wobec której się tego podejmuje.\n\nJest interpretowane jako FELONY.\nJest interpretowane jako MISDEMEANOR jeśli szkodliwość czynu jest niska.",
+        "penalties": {
+          "USD": [0, 1000],
+          "Jail": [1, 5]
+        }
+      },
+      {
+        "id": "135",
+        "title": "UTRUDNIANIE WYKONYWANIA ZAWODU",
+        "categories": ["M", "I"],
+        "description": "Każda osoba, która utrudnia innej osobie wykonywanie jego zawodu lub poleceń przełożonego.\n\nJest interpretowane jako MISDEMEANOR jeśli szkodliwość czynu jest wysoka. Na przykład dotyczy pracy urzędnika państwowego, lub oficera pokoju.\nJest interpretowane jako INFRACTION jeśli szkodliwość czynu jest niska. Na przykład dotyczy pracownika gastronomii lub zakładu fryzjerskiego.",
+        "penalties": {
+          "USD": [0, 700],
+          "Jail": [1, 2]
+        }
+      },
+      {
+        "id": "136",
+        "title": "NIESTOSOWANIE SIĘ DO POLECEŃ",
+        "categories": ["M"],
+        "description": "Każda osoba, która nie stosuje się do poleceń wydanych przez osobę uprawnioną do ich wydania, lub nakłania inne osoby do niestosowania się poleceń.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [1, 3]
+        }
+      },
+      {
+        "id": "137",
+        "title": "UCIECZKA PRZED ORGANAMI ŚCIGANIA",
+        "categories": ["F"],
+        "description": "Każda osoba, która próbuje, pomaga, świadomie współuczestniczy lub dokonuje ucieczki przed organami ścigania.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 600],
+          "Jail": [1, 6]
+        }
+      },
+      {
+        "id": "138",
+        "title": "UCIECZKA PIESZA",
+        "categories": ["M"],
+        "description": "Każda osoba, która próbuje, pomaga lub dokonuje ucieczki pieszej przed organami ścigania.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 300],
+          "Jail": [1, 3]
+        }
+      },
+      {
+        "id": "139",
+        "title": "PRZYNALEŻNOŚĆ DO GRUPY ZAKAZANEJ",
+        "categories": ["F", "M"],
+        "description": "Każda osoba, która przynależy do grupy ujętej w kodeksie grup zakazanych lub współuczestniczy w jej spotkaniach lub strukturze wewnętrznej.\n\nJest interpretowane jako FELONY jeśli grupa jest grupą przestępczą.\nJest interpretowane jako MISDEMEANOR jeśli grupa jest grupą ideologiczną.",
+        "penalties": {
+          "USD": [0, 1200],
+          "Jail": [1, 4]
+        }
+      },
+      {
+        "id": "140",
+        "title": "PROMOWANIE DZIAŁAŃ PRZESTĘPCZYCH",
+        "categories": ["F"],
+        "description": "Każda osoba, która promuje, nagłaśnia, namawia do działań przestępczych.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 400],
+          "Jail": [1, 3]
+        }
+      },
+      {
+        "id": "141",
+        "title": "STAWIANIE OPORU",
+        "categories": ["M"],
+        "description": "Każda osoba, która stawia opór wobec wydawanych poleceń przez uprawnionego do ich wydania lub używa siły lub przedmiotu celem przeciwstawienia się użyciu prawnych środków przez uprawnionego.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [1, 4]
+        }
+      },
+      {
+        "id": "142",
+        "title": "STAWIANIE OPORU PRZY ARESZTOWANIU",
+        "categories": ["F"],
+        "description": "Każda osoba, która stawia opór wobec wydawanych poleceń przez uprawnionego do ich wydania w trakcie próby aresztowania lub używa siły celem przeciwstawienia się.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 700],
+          "Jail": [2, 6]
+        }
+      },
+      {
+        "id": "143",
+        "title": "UTRUDNIANIE INTERWENCJI",
+        "categories": ["M", "I"],
+        "description": "Każda osoba, która świadomie utrudnia przeprowadzaną interwencję przez uprawnionego.\n\nJest interpretowane jako MISDEMEANOR jeśli szkodliwość czynu jest wysoka i poważnie utrudnia działania prawne.\nJest interpretowane jako INFRACTION jeśli szkodliwość czynu jest niska.",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [1, 3]
+        }
+      },
+      {
+        "id": "144",
+        "title": "NAPAŚĆ NA OFICERA POKOJU",
+        "categories": ["F"],
+        "description": "Każda osoba, która świadomie napada na oficera pokoju, agenta lub urzędnika.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [9, 12]
+        }
+      },
+      {
+        "id": "145",
+        "title": "MORDERSTWO OFICERA POKOJU",
+        "categories": ["F"],
+        "description": "Każda osoba, która świadomie zabija oficera pokoju, agenta lub urzędnika.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [12, 30]
+        }
+      },
+      {
+        "id": "146",
+        "title": "PRÓBA MORDERSTWA OFICERA POKOJU",
+        "categories": ["F"],
+        "description": "Każda osoba, która świadomie dokonuje zamachu na życie lub zdrowie oficera pokoju, agenta lub urzędnika z pomocą broni śmiertelnej lub bez jej użycia.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [8, 16]
+        }
+      },
+      {
+        "id": "147",
+        "title": "WPROWADZENIE W BŁĄD OFICERA POKOJU",
+        "categories": ["M"],
+        "description": "Każda osoba, która świadomie wprowadza w błąd oficera pokoju, podaje fałszywe dane lub fałszywe zeznania.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 400],
+          "Jail": [2, 6]
+        }
+      },
+      {
+        "id": "149",
+        "title": "NIEOPŁACENIE GRZYWNY",
+        "categories": ["M"],
+        "description": "Każda osoba, która pomimo decyzji sądu nie opłaca zasądzonej grzywny.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 1000],
+          "Jail": [5, 10]
+        }
+      },
+      {
+        "id": "150",
+        "title": "PODSZYWANIE SIĘ POD OFICERA POKOJU",
+        "categories": ["F"],
+        "description": "Każda osoba, która podszywa się pod oficera pokoju, agenta lub urzędnika celem osiągnięcia korzyści majątkowej lub dokonania innego przestępstwa.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 1500],
+          "Jail": [7, 10]
+        }
+      }
+    ]
+  },
+  {
+    "chapter": "Rozdział III - Przestępstwa przeciwko osobie i CIVIL CODE",
+    "articles": [
+      {
+        "id": "187",
+        "title": "MORDERSTWO PIERWSZEGO STOPNIA",
+        "categories": ["F"],
+        "description": "Każda osoba, która zabija drugą osobę z premedytacją, jasnym zamiarem i osiąga swój cel ale nie robi tego z przesłankami okrucieństwa czy tortur.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [10, 24]
+        }
+      },
+      {
+        "id": "188",
+        "title": "MORDERSTWO DRUGIEGO STOPNIA",
+        "categories": ["F"],
+        "description": "Każda osoba, która zabija drugą osobę z premedytacją, jasnym zamiarem i osiąga swój cel i również posługuje się w trakcie tego aktu szczególną brutalnością czy torturami.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [14, 30]
+        }
+      },
+      {
+        "id": "189",
+        "title": "ZABÓJSTWO",
+        "categories": ["F"],
+        "description": "Każda osoba, która zabija drugą osobę bez premedytacji i bez jasnego zamiaru. Na przykład w trakcie wypadku, popełniania innego przestępstwa lub aktu, który doprowadza do śmierci przez przypadek.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [5, 12]
+        }
+      },
+      {
+        "id": "191",
+        "title": "NAPAŚĆ",
+        "categories": ["F", "M"],
+        "description": "Każda osoba, która świadomie dokonuje napaści bez użycia śmiertelnego narzędzia celem zastraszenia lub wymuszenia.\n\nJest interpretowane jako FELONY, jeśli wyrządzona krzywda fizyczna drugiej osobie obejmuje poważne obrażenia.\nJest interpretowane jako MISDEMEANOR, jeśli wyrządzona krzywda fizyczna drugiej osobie nie obejmuje poważnych obrażeń.",
+        "penalties": {
+          "USD": [0, 800],
+          "Jail": [1, 7]
+        }
+      },
+      {
+        "id": "193",
+        "title": "NAPAŚĆ Z BRONIĄ ŚMIERTELNĄ",
+        "categories": ["F"],
+        "description": "Każda osoba, która dokonuje napaści opisanej w punkcie 191. lecz posługuje się bronią palną.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [4, 10]
+        }
+      },
+      {
+        "id": "197",
+        "title": "RABUNEK",
+        "categories": ["F"],
+        "description": "Każda osoba, która zastraszeniem z użyciem śmiertelnego narzędzia jak broń palna lub broń biała dokonuje wymuszenia dobra materialnego lub informacji od innej osoby.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [3, 6]
+        }
+      },
+      {
+        "id": "199",
+        "title": "GWAŁT",
+        "categories": ["F"],
+        "description": "Każda osoba, która wymusza na drugiej osobie dokonanie aktu seksualnego bez wyraźnej zgody drugiej osoby i osiąga sukces.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 2000],
+          "Jail": [8, 15]
+        }
+      }
+    ]
+  },
+  {
+    "chapter": "Rozdział IV - Przestępstwa z użyciem pojazdów i VEHICLE CODE",
+    "articles": [
+      {
+        "id": "205",
+        "title": "KRADZIEŻ POJAZDU",
+        "categories": ["F"],
+        "description": "Każda osoba, która przywłaszcza, przejmuje kontrolę lub włamuje się do pojazdu z zamiarem jego przejęcia i kradzieży w celu korzyści majątkowej.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 1500],
+          "Jail": [4, 6]
+        }
+      },
+      {
+        "id": "302",
+        "title": "SPOWODOWANIE ŚMIERTELNEGO WYPADKU DROGOWEGO",
+        "categories": ["F"],
+        "description": "Każda osoba, która powoduje swoim zachowaniem na drodze wypadek, w którym inna osoba poniosła śmierć, lub potrąca pieszego powodując jego śmierć.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 700],
+          "Jail": [6, 12]
+        }
+      },
+      {
+        "id": "310",
+        "title": "HIT&RUN",
+        "categories": ["F", "M"],
+        "description": "Każda osoba, która powoduje wypadek lub kolizję drogową i świadomie ucieka z miejsca zdarzenia.\n\nJest interpretowane jako FELONY jeśli ucieczka dotyczyła spowodowania wypadku drogowego. (Z poszkodowanymi)\nJest interpretowane jako MISDEMEANOR jeśli ucieczka dotyczyła spowodowania kolizji drogowej. (Bez poszkodowanych)",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [2, 5]
+        }
+      },
+      {
+        "id": "314",
+        "title": "PRZEKROCZENIE PRĘDKOŚCI",
+        "categories": ["I"],
+        "description": "Każda osoba, która przekracza dozwolone limity prędkości. Limity: Miasto 80km/h, Trasa 110km/h, Autostrada 150km/h.\n\nJest interpretowane jako INFRACTION.",
+        "penalties": {
+          "USD": [0, 600],
+          "Jail": [0, 0]
+        }
+      },
+      {
+        "id": "323",
+        "title": "JAZDA POD WPŁYWEM (DUI)",
+        "categories": ["M"],
+        "description": "Każda osoba, która prowadzi pojazd będąc pod wpływem alkoholu lub innych substancji odurzających.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [1, 3]
+        }
+      },
+      {
+        "id": "342",
+        "title": "NIEZASTOSOWANIE SIĘ DO SYGNALIZACJI",
+        "categories": ["I"],
+        "description": "Każda osoba, która kieruje pojazdem i nie stosuje się do sygnalizacji świetlnej lub nie stosuje się do poleceń drogowych wydawanych przez osobę do tego uprawnioną.\n\nJest interpretowane jako INFRACTION.",
+        "penalties": {
+          "USD": [0, 600],
+          "Jail": [0, 0]
+        }
+      }
+    ]
+  },
+  {
+    "chapter": "Rozdział V - GUN CONTROL ACT",
+    "articles": [
+      {
+        "id": "417",
+        "title": "POSIADANIE NIELEGALNEJ BRONI PALNEJ",
+        "categories": ["F"],
+        "description": "Każda osoba, która posiada, używa, użycza lub pożycza nielegalną broń palną.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [2, 4]
+        }
+      },
+      {
+        "id": "421",
+        "title": "PRZEMYT BRONI",
+        "categories": ["F"],
+        "description": "Każda osoba, która przemyca broń z innego kraju, stanu lub która pełni usługę przewozu nielegalnej broni palnej lub ładunków wybuchowych lub która importuje lub exportuje nielegalną broń palną lub ładunki wybuchowe.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [10, 24]
+        }
+      }
+    ]
+  },
+  {
+    "chapter": "Rozdział VI - Przestępstwa przeciwko mieniu CIVIL CODE",
+    "articles": [
+      {
+        "id": "453",
+        "title": "WŁAMANIE",
+        "categories": ["F"],
+        "description": "Każda osoba, która dokonuje lub próbuje się włamać do czyjejś posesji lub pojazdu.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 500],
+          "Jail": [2, 4]
+        }
+      },
+      {
+        "id": "456",
+        "title": "KRADZIEŻ",
+        "categories": ["M"],
+        "description": "Każda osoba, która kradnie dobro materialne należące do innej osoby lub instytucji rządowej, lub do innej ustanowionej prawem własności.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 200],
+          "Jail": [1, 2]
+        }
+      },
+      {
+        "id": "458",
+        "title": "PODPALENIE",
+        "categories": ["F"],
+        "description": "Każda osoba, która wznieca ogień celem podpalenia rzeczy lub posiadłości należącej do innej osoby lub instytucji.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 0],
+          "Jail": [3, 6]
+        }
+      }
+    ]
+  },
+  {
+    "chapter": "Rozdział VII - Substancje kontrolowane prawem",
+    "articles": [
+      {
+        "id": "501",
+        "title": "POSIADANIE SUBSTANCJI KONTROLOWANEJ",
+        "categories": ["M"],
+        "description": "Każda osoba, która posiada substancję kontrolowaną prawem, poza ustanowionymi ramami prawa w Drug Control Act. Na przykład posiadanie marihuany w ilości ponad jednej, dozwolonej uncji.\n\nJest interpretowane jako MISDEMEANOR.",
+        "penalties": {
+          "USD": [0, 400],
+          "Jail": [1, 2]
+        }
+      },
+      {
+        "id": "502",
+        "title": "HANDEL SUBSTANCJĄ KONTROLOWANĄ",
+        "categories": ["F"],
+        "description": "Każda osoba, która w sposób nieuprawniony i niecertyfikowany handluje substancją kontrolowaną.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [0, 700],
+          "Jail": [3, 6]
+        }
+      },
+      {
+        "id": "503",
+        "title": "WYTWARZANIE SUBSTANCJI KONTROLOWANEJ",
+        "categories": ["F"],
+        "description": "Każda osoba, która wytwarza, hoduje rośliny lub porcjuje substancje kontrolowane.\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [800, 800],
+          "Jail": [4, 5]
+        }
+      },
+      {
+        "id": "506",
+        "title": "POSIADANIE ZNACZNEJ ILOŚCI",
+        "categories": ["F"],
+        "description": "Hurtowe ilości substancji kontrolowanych. (Powyżej 10 uncji marihuany lub inne twarde narkotyki).\n\nJest interpretowane jako FELONY.",
+        "penalties": {
+          "USD": [900, 900],
+          "Jail": [3, 10]
+        }
+      }
+    ]
+  }
+]

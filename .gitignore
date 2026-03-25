@@ -1,0 +1,25 @@
+# Build directories
+dist/
+build/
+LSPD_Helper_Pack/
+
+# Dependencies
+node_modules/
+
+# Python build artifacts
+*.spec
+__pycache__/
+
+# Local/Temp files
+.gemini/
+upx-*/
+*.log
+
+# Personal/Copy files
+penal_code copy.json
+raw_penal_code.txt
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db

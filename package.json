@@ -1,0 +1,45 @@
+{
+  "name": "lspd-viewer",
+  "version": "1.0.0",
+  "description": "LSPD Penal Code Tool",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder --win portable",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.13.3",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.2",
+    "vite-plugin-electron": "^0.29.1"
+  },
+  "author": "Allerek",
+  "build": {
+    "appId": "com.lspd.helper",
+    "productName": "LSPD Kartoteka",
+    "win": {
+      "icon": "icon.png",
+      "target": [
+        "portable"
+      ]
+    },
+    "compression": "store",
+    "asar": true,
+    "files": [
+      "main.js",
+      "index.html",
+      "penal_code.json",
+      "icon.png",
+      "sounds/**/*"
+    ],
+    "extraResources": [
+      "penal_code.json",
+      "icon.png"
+    ]
+  }
+}
