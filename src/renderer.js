@@ -81,8 +81,45 @@ async function loginAnimation() {
     overlay.style.opacity = '0';
     setTimeout(() => {
         overlay.style.display = 'none';
-        initApp();
+        initData();
     }, 1000);
+}
+
+// --- SYNC & DATA ---
+const REMOTE_URL = 'https://raw.githubusercontent.com/Allerek/devgaming-LSPD-Helper/refs/heads/main/penal_code.json';
+let activePenalData = [...penalData]; // Start with bundled fallback
+
+async function initData() {
+    const fs = window.require('fs');
+    const path = window.require('path');
+    const baseDir = window.process.env.PORTABLE_EXECUTABLE_DIR || path.dirname(window.process.execPath);
+    const localPath = path.join(baseDir, 'penal_code.json');
+
+    // 1. First, try to load from local file (if exists from previous sync or manual)
+    try {
+        if (fs.existsSync(localPath)) {
+            const raw = fs.readFileSync(localPath, 'utf8');
+            activePenalData = JSON.parse(raw);
+            console.log("Wczytano lokalną kopię bazy.");
+        }
+    } catch (e) { console.error("Błąd wczytywania lokalnego pliku:", e); }
+
+    // 2. Try to sync with GitHub (Background)
+    try {
+        console.log("Synchronizacja z chmurą...");
+        const response = await fetch(REMOTE_URL);
+        if (response.ok) {
+            const cloudData = await response.json();
+            activePenalData = cloudData;
+            // Persistence: update local file for next offline launch
+            fs.writeFileSync(localPath, JSON.stringify(cloudData, null, 2));
+            console.log("Zsynchronizowano pomyślnie z GitHub!");
+        }
+    } catch (e) {
+        console.warn("Brak połączenia z GitHub, używam ostatniej znanej wersji.");
+    }
+
+    initApp();
 }
 
 // --- CORE FUNCTIONS ---
@@ -90,7 +127,7 @@ function initApp() {
     const list = document.getElementById('chapter-list');
     list.innerHTML = '';
     
-    penalData.forEach((ch, idx) => {
+    activePenalData.forEach((ch, idx) => {
         const btn = document.createElement('button');
         btn.className = 'chapter-btn w-full text-left px-4 py-3 rounded-lg text-slate-400 hover:bg-white/5 hover:text-white text-xs font-semibold transition-all border-l-2 border-transparent';
         btn.innerText = ch.chapter;
@@ -216,7 +253,7 @@ document.getElementById('search-input').oninput = (e) => {
         return;
     }
     const res = [];
-    penalData.forEach(ch => {
+    activePenalData.forEach(ch => {
         ch.articles.forEach(art => {
             if (art.id.toLowerCase().includes(q) || art.title.toLowerCase().includes(q)) {
                 res.push(art);

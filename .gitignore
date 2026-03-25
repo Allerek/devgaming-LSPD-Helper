@@ -1,5 +1,6 @@
 # Build directories
 dist/
+dist-electron/
 build/
 LSPD_Helper_Pack/
 
