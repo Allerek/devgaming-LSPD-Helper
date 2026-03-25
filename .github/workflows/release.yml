@@ -38,7 +38,7 @@ jobs:
 
       - name: Build Python Overlay
         run: |
-          pyinstaller --noconsole --onefile --noupx --icon=icon.png lspd_overlay.py
+          pyinstaller --noconsole --onefile --noupx --icon=icon.png --distpath dist-overlay lspd_overlay.py
 
       - name: Build Electron Kartoteka
         run: |
@@ -50,8 +50,8 @@ jobs:
         shell: bash
         run: |
           mkdir -p release_package
-          cp dist/lspd_overlay.exe release_package/
-          cp "dist/LSPD Kartoteka "*.exe release_package/
+          cp dist-overlay/lspd_overlay.exe release_package/
+          cp dist/*.exe release_package/
           cp penal_code.json release_package/
           cp icon.png release_package/
           cp -r sounds release_package/
