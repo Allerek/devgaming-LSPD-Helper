@@ -23,7 +23,7 @@
     "appId": "com.lspd.helper",
     "productName": "LSPD Kartoteka",
     "win": {
-      "icon": "icon.png",
+      "icon": "public/icon.png",
       "target": [
         "portable"
       ]
@@ -33,13 +33,10 @@
     "files": [
       "dist-electron/**/*",
       "dist/**/*",
-      "penal_code.json",
-      "icon.png",
-      "sounds/**/*"
+      "penal_code.json"
     ],
     "extraResources": [
-      "penal_code.json",
-      "icon.png"
+      "penal_code.json"
     ]
   }
 }

@@ -59,7 +59,7 @@ async function checkStatusAndSend() {
 function createWindow() {
     win = new BrowserWindow({
         width: 1400, height: 900,
-        icon: path.join(app.getAppPath(), 'icon.png'),
+        icon: path.join(app.getAppPath(), process.env.VITE_DEV_SERVER_URL ? 'public/icon.png' : 'dist/icon.png'),
         backgroundColor: '#0c0e14', autoHideMenuBar: true, resizable: true,
         webPreferences: { nodeIntegration: true, contextIsolation: false }
     });
