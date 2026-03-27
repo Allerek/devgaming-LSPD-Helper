@@ -1960,6 +1960,24 @@
           ]
         }
       },
+       {
+        "id": "415",
+        "title": "415. POSIADANIE KASTETU",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która posiada na swoim wyposażeniu lub jest właścicielem kastetu.\n\nJest interpretowane jako MISDEMEANOR.\n\n\t\t\tZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 1 do 2 miesięcy i/lub grzywną nie przekraczającą 400 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            400
+          ],
+          "Jail": [
+            1,
+            2
+          ]
+        }
+      },
       {
         "id": "416",
         "title": "POSIADANIE NIELEGALNEGO TYPU NOŻA",
