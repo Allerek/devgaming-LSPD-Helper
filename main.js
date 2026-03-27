@@ -18,7 +18,7 @@ async function startOverlay(manual = false) {
     
     // W trybie produkcyjnym szukamy ZAWSZE w tym samym folderze co EXE (używając PORTABLE_EXECUTABLE_DIR)
     const baseDir = isDev 
-        ? __dirname 
+        ? app.getAppPath() 
         : (process.env.PORTABLE_EXECUTABLE_DIR || path.dirname(process.execPath));
     
     const overlayPath = path.join(baseDir, 'lspd_overlay.exe');
@@ -59,7 +59,7 @@ async function checkStatusAndSend() {
 function createWindow() {
     win = new BrowserWindow({
         width: 1400, height: 900,
-        icon: path.join(__dirname, 'icon.png'),
+        icon: path.join(app.getAppPath(), 'icon.png'),
         backgroundColor: '#0c0e14', autoHideMenuBar: true, resizable: true,
         webPreferences: { nodeIntegration: true, contextIsolation: false }
     });
@@ -68,7 +68,7 @@ function createWindow() {
     if (process.env.VITE_DEV_SERVER_URL) {
         win.loadURL(process.env.VITE_DEV_SERVER_URL);
     } else {
-        win.loadFile(path.join(__dirname, 'dist/index.html'));
+        win.loadFile(path.join(app.getAppPath(), 'dist/index.html'));
     }
     
     win.webContents.on('did-finish-load', () => {
