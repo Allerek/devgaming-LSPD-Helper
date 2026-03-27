@@ -4,7 +4,8 @@ import penalData from './penal_code.json';
 const ipc = window.require('electron').ipcRenderer;
 
 // --- STATE ---
-let ticketEntries = [];
+const ticketEntries = [];
+window.ticketEntries = ticketEntries;
 const kbFiles = ['sounds/keyboard1.mp3', 'sounds/keyboard2.mp3', 'sounds/keyboard3.mp3'];
 const mouseSound = new Audio('sounds/mouseClick.mp3');
 let lastKBIdx = -1;
@@ -194,11 +195,23 @@ function renderTicket() {
             <div class="grid grid-cols-3 gap-2">
                 <div class="space-y-1">
                     <label class="text-[0.55rem] font-black text-accent uppercase opacity-60">USD</label>
-                    <input type="number" value="${e.uUSD}" oninput="window.updateEntry(${idx}, 'uUSD', this.value)" class="w-full bg-[#0c0e14] border-none rounded p-1.5 text-xs text-white">
+                    <input type="number" 
+                        value="${e.uUSD}" 
+                        min="${e.penalties.USD[0]}" 
+                        max="${e.penalties.USD[1]}" 
+                        oninput="window.updateEntry(${idx}, 'uUSD', this.value)" 
+                        onblur="this.value = window.ticketEntries[${idx}].uUSD"
+                        class="w-full bg-[#0c0e14] border-none rounded p-1.5 text-xs text-white">
                 </div>
                 <div class="space-y-1">
                     <label class="text-[0.55rem] font-black text-accent uppercase opacity-60">Jail</label>
-                    <input type="number" value="${e.uJail}" oninput="window.updateEntry(${idx}, 'uJail', this.value)" class="w-full bg-[#0c0e14] border-none rounded p-1.5 text-xs text-white">
+                    <input type="number" 
+                        value="${e.uJail}" 
+                        min="${e.penalties.Jail[0]}" 
+                        max="${e.penalties.Jail[1]}" 
+                        oninput="window.updateEntry(${idx}, 'uJail', this.value)" 
+                        onblur="this.value = window.ticketEntries[${idx}].uJail"
+                        class="w-full bg-[#0c0e14] border-none rounded p-1.5 text-xs text-white">
                 </div>
                 <div class="space-y-1">
                     <label class="text-[0.55rem] font-black text-accent uppercase opacity-60">KAT</label>
@@ -224,8 +237,16 @@ function updateTotals() {
 
 // --- GLOBALS FOR ONCLICK ---
 window.updateEntry = (idx, field, val) => {
-    if (field !== 'uCat') val = Math.max(0, parseInt(val) || 0);
-    ticketEntries[idx][field] = val;
+    if (field === 'uCat') {
+        ticketEntries[idx][field] = val;
+    } else {
+        const entry = ticketEntries[idx];
+        const range = field === 'uUSD' ? entry.penalties.USD : entry.penalties.Jail;
+        let v = parseInt(val) || 0;
+        // Clamp:
+        v = Math.max(range[0], Math.min(v, range[1]));
+        ticketEntries[idx][field] = v;
+    }
     updateTotals();
 };
 window.removeEntry = (idx) => {
@@ -249,7 +270,7 @@ window.generateReport = () => {
     });
 };
 window.clearTicket = () => {
-    ticketEntries = [];
+    ticketEntries.length = 0;
     renderTicket();
 };
 
