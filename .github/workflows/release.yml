@@ -42,12 +42,12 @@ jobs:
 
       - name: Build Python Overlay
         run: |
-          pyinstaller --noconsole --onefile --noupx --icon=icon.png --distpath dist-overlay lspd_overlay.py
+          pyinstaller --noconsole --onefile --noupx --icon=public/icon.png --distpath dist-overlay lspd_overlay.py
 
       - name: Build Electron Kartoteka
         run: |
           # Resize icon for electron-builder (standardizes the size)
-          python -c "from PIL import Image; img = Image.open('icon.png'); img.resize((256, 256), Image.Resampling.LANCZOS).save('icon.png')"
+          python -c "from PIL import Image; img = Image.open('public/icon.png'); img.resize((256, 256), Image.Resampling.LANCZOS).save('public/icon.png')"
           pnpm run build
 
       - name: Prepare Release Package
@@ -57,8 +57,8 @@ jobs:
           cp dist-overlay/lspd_overlay.exe release_package/
           cp dist/*.exe release_package/
           cp penal_code.json release_package/
-          cp icon.png release_package/
-          cp -r sounds release_package/
+          cp public/icon.png release_package/
+          cp -r public/sounds release_package/
           cd release_package
           7z a ../LSPD_Helper_${{ github.ref_name }}.zip ./*
 

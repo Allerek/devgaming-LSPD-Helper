@@ -22,7 +22,7 @@ if errorlevel 1 (
 )
 echo.
 echo [2/4] Kompilacja Overlay'a (PyInstaller)...
-call pyinstaller --noconsole --onefile --noupx --icon=icon.png lspd_overlay.py
+call pyinstaller --noconsole --onefile --noupx --icon=public/icon.png lspd_overlay.py
 if errorlevel 1 (
     echo [ERROR] Blad przy kompilacji Pythona!
     pause
@@ -31,7 +31,7 @@ if errorlevel 1 (
 echo.
 echo [3/4] Budowanie Kartoteki (Vite + Tailwind + Electron)...
 :: Przeskalowanie ikony do 256x256 (wymagane przez Electron-buildera)
-call python -c "from PIL import Image; img = Image.open('icon.png'); img.resize((256, 256), Image.Resampling.LANCZOS).save('icon.png')"
+call python -c "from PIL import Image; img = Image.open('public/icon.png'); img.resize((256, 256), Image.Resampling.LANCZOS).save('public/icon.png')"
 call pnpm run build
 if errorlevel 1 (
     echo [ERROR] Blad przy budowaniu Kartoteki!
@@ -45,7 +45,8 @@ mkdir LSPD_Helper_Pack
 copy dist\lspd_overlay.exe LSPD_Helper_Pack\
 copy "dist\LSPD Kartoteka*.exe" LSPD_Helper_Pack\
 copy penal_code.json LSPD_Helper_Pack\
-copy icon.png LSPD_Helper_Pack\
+copy public\icon.png LSPD_Helper_Pack\
+xcopy /e /i /y public\sounds LSPD_Helper_Pack\sounds\
 echo.
 echo ========================================================
 echo [LSPD HELPER] BUDOWANIE ZAKONCZONE!
