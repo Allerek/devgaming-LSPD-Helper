@@ -421,6 +421,24 @@
         }
       },
       {
+        "id": "149",
+        "title": "NIEOPŁACENIE GRZYWNY (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która pomimo decyzji sądu nie opłaca zasądzonej grzywny.\n\nJest interpretowane jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 5 do 10 miesięcy i/lub grzywny nieprzekraczającej 1000 USD.\n\nJeżeli osoba dokonała przestępstwa z którego wynika niezapłacona grzywna za pomocą pojazdu - departament organu ścigania ma prawo do zajęcia pojazdu tej osoby i przekazania sprawy w ręce IRS.",
+        "penalties": {
+          "USD": [
+            0,
+            1000
+          ],
+          "Jail": [
+            5,
+            10
+          ]
+        }
+      },
+      {
         "id": "151",
         "title": "PROWADZENIE DZIAŁALNOŚCI ADWOKACKIEJ BEZ LICENCJI",
         "categories": [
