@@ -439,6 +439,24 @@
         }
       },
       {
+        "id": "150",
+        "title": "PODSZYWANIE SIĘ POD OFICERA POKOJU (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która podszywa się pod oficera pokoju, agenta lub urzędnika celem osiągnięcia korzyści majątkowej lub dokonania innego przestępstwa.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 7 do 10 miesięcy i/lub grzywną nie przekraczającą 1500 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            1500
+          ],
+          "Jail": [
+            7,
+            10
+          ]
+        }
+      },
+      {
         "id": "151",
         "title": "PROWADZENIE DZIAŁALNOŚCI ADWOKACKIEJ BEZ LICENCJI",
         "categories": [
@@ -882,6 +900,24 @@
         }
       },
       {
+        "id": "205",
+        "title": "KRADZIEŻ POJAZDU. (GTA) (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która przywłaszcza, przejmuje kontrolę lub włamuje się do pojazdu z zamiarem jego przejęcia i kradzieży w celu korzyści majątkowej.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 4 do 6 miesięcy i/lub grzywną nie przekraczającą 1500 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            1500
+          ],
+          "Jail": [
+            4,
+            6
+          ]
+        }
+      },
+      {
         "id": "206",
         "title": "UŻYCIE POJAZDU DO WYKONANIA PRZESTĘPSTWA",
         "categories": [
@@ -1027,6 +1063,42 @@
         }
       },
       {
+        "id": "214",
+        "title": "NAPAD NA KONWÓJ (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która dokonuje napadu na konwój przewożący więźnia lub przewożący pieniądze lub inne dobro materialne lub informacyjne.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 5 do 11 miesięcy i/lub grzywną w wysokości 5200 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            5200
+          ],
+          "Jail": [
+            5,
+            11
+          ]
+        }
+      },
+      {
+        "id": "215",
+        "title": "CARJACKING (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która siłą fizyczną, zastraszaniem, z pomocą narzędzia śmiertelnego lub broni palnej dokonuje siłowego przejęcia kontroli nad innym pojazdem.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 2 do 7 miesięcy i/lub grzywną nie przekraczającą 1200 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            1200
+          ],
+          "Jail": [
+            2,
+            7
+          ]
+        }
+      },
+      {
         "id": "216",
         "title": "NIENAWIŚĆ",
         "categories": [
@@ -1041,6 +1113,24 @@
           "Jail": [
             0,
             0
+          ]
+        }
+      },
+      {
+        "id": "217",
+        "title": "SUTENERSTWO (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która prowadzi działalność polegającą na odpłatnych aktach seksualnych bądź handluje ciałem kobiet, lub przymusza kobiety do takiej pracy lub oferuje taki rodzaj pracy\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 5 do 11 miesięcy i/lub grzywną nie przekraczającą 6000 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            6000
+          ],
+          "Jail": [
+            5,
+            11
           ]
         }
       },
@@ -1077,6 +1167,24 @@
           "Jail": [
             11,
             24
+          ]
+        }
+      },
+      {
+        "id": "220",
+        "title": "KONSPIRACJA (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba która we współpracy z inną osobą spiskuje z zamiarem popełnienia przestępstwa, fałszywego oskarżenia innej osoby, oszukiwania, popełnienia jakiegokolwiek czynu szkodliwego społecznie lub publicznie.\n\nJest interpretowane jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 4 do 8 miesięcy i/lub grzywną nie przekraczającą 1200 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            1200
+          ],
+          "Jail": [
+            4,
+            8
           ]
         }
       },
@@ -1226,6 +1334,24 @@
         }
       },
       {
+        "id": "229",
+        "title": "SHOPLIFTING (I)",
+        "categories": [
+          "I"
+        ],
+        "description": "Każda osoba, która podejmuje się lekkiej kradzieży sklepowej, której wartość nie przekracza 700 USD.\n\nInterpretowane jest jako INFRACTION.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą grzywny nieprzekraczającej 200 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            200
+          ],
+          "Jail": [
+            0,
+            0
+          ]
+        }
+      },
+      {
         "id": "230",
         "title": "PIJAŃSTWO W MIEJSCU PUBLICZNYM (NARKOTYKI)",
         "categories": [
@@ -1267,6 +1393,24 @@
   {
     "chapter": "Rozdział IV - Przestępstwa z użyciem pojazdów i VEHICLE CODE.",
     "articles": [
+      {
+        "id": "300",
+        "title": "NIEUPRAWNIONE ZACHOWANIE (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która dokonuje nieuprawnionego zachowania podczas zatrzymania drogowego, na przykład nie trzyma rąk na kierownicy mimo poleceń, nie wykonuje poleceń oficera pokoju w trakcie zatrzymania, nie opuszcza szyby lub nie gasi silnika.\n\nInterpretowane jest jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 1 do 2 miesięcy i/lub grzywną nie przekraczającą 250 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            250
+          ],
+          "Jail": [
+            1,
+            2
+          ]
+        }
+      },
       {
         "id": "301",
         "title": "UNIKANIE ODPOWIEDZIALNOŚCI ZA PRZESTĘPSTWO DROGOWE",
@@ -1340,6 +1484,24 @@
         }
       },
       {
+        "id": "305",
+        "title": "ODMOWA PIERWSZEJ POMOCY (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która może udzielić pierwszej pomocy medycznej ofiarom wypadku drogowego, ale nie robi tego bez uzasadnionego powodu.\n\nInterpretowane jest jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 2 do 5 miesięcy i/lub grzywną nie przekraczającą 350 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            350
+          ],
+          "Jail": [
+            2,
+            5
+          ]
+        }
+      },
+      {
         "id": "306",
         "title": "BRAK OBOWIĄZKOWYCH DOKUMENTÓW",
         "categories": [
@@ -1372,6 +1534,24 @@
           "Jail": [
             1,
             3
+          ]
+        }
+      },
+      {
+        "id": "308",
+        "title": "BRAK TABLIC REJESTRACYJNYCH (I)",
+        "categories": [
+          "I"
+        ],
+        "description": "Każda osoba, która podczas zatrzymania drogowego lub innej czynności prawnej nie posiada na swoim pojeździe przytwierdzonych i widocznych tablic rejestracyjnych, lub których rozczytanie przez organy ścigania jest trudne lub niemożliwe.\n\nInterpretowane jest jako INFRACTION.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą grzywny nie przekraczającą 500 USD. Pojazd osoby winnej może zostać zajęty przez departament ścigania na nie dłużej niż 2 dni. Licencja kierowcy może zostać dezaktywowana lub zawieszona na nie dłużej niż 5 dni",
+        "penalties": {
+          "USD": [
+            0,
+            500
+          ],
+          "Jail": [
+            0,
+            0
           ]
         }
       },
@@ -1576,6 +1756,24 @@
         }
       },
       {
+        "id": "320",
+        "title": "NADMERNÝ HAŁAS POJAZDU (I)",
+        "categories": [
+          "I"
+        ],
+        "description": "Każda osoba, która prowadzi pojazd w sposób wytwarzający nadmierny hałas nie mieszczący się w ramach ustalonych Vehicle Code, lub prowadzi pojazd dociskając gaz celem wywołania większego rozruchu silnika co prowadzi do zwiększonej głośności pojazdu.\n\nJest interpretowane jako INFRACTION.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą grzywny nieprzekraczającej 300 USD. Departament ścigania może zająć pojazd na nie dłużej niż 3 dni",
+        "penalties": {
+          "USD": [
+            0,
+            300
+          ],
+          "Jail": [
+            0,
+            0
+          ]
+        }
+      },
+      {
         "id": "321",
         "title": "NADUŻYWANIE KLAKSONU",
         "categories": [
@@ -1730,6 +1928,24 @@
           "USD": [
             0,
             100
+          ],
+          "Jail": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "id": "330",
+        "title": "UTRUDNIANIE PRZEPŁYWU RUCHU (I)",
+        "categories": [
+          "I"
+        ],
+        "description": "Każda osoba, która swoją jazdą utrudnia przepływ ruchu wykonując nielegalne manewry lub jadąc zbyt powoli lub robiąc to umyślnie.\n\nJest interpretowane jako INFRACTION.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą grzywny nieprzekraczającej 250 USD. Licencja kierowcy może zostać zawieszona na nie dłużej niż 2 dni.",
+        "penalties": {
+          "USD": [
+            0,
+            250
           ],
           "Jail": [
             0,
@@ -2033,6 +2249,24 @@
         }
       },
       {
+        "id": "418",
+        "title": "POSIADANIE NIELEGALNEJ BRONI PALNEJ (DŁUGIEJ) (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która posiada, używa, użycza lub pożycza nielegalną broń palną z kategorii broni długich.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 3 do 6 miesięcy.",
+        "penalties": {
+          "USD": [
+            0,
+            0
+          ],
+          "Jail": [
+            3,
+            6
+          ]
+        }
+      },
+      {
         "id": "419",
         "title": "POSIADANIE NIELEGALNEJ BRONI MYŚLIWSKIEJ",
         "categories": [
@@ -2123,6 +2357,24 @@
         }
       },
       {
+        "id": "424",
+        "title": "HANDEL BRONIĄ PALNĄ (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która w sposób nielegalny i nieregulowany prawem handluje bronią palną bez państwowych upoważnień.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 5 do 12 miesięcy.",
+        "penalties": {
+          "USD": [
+            0,
+            0
+          ],
+          "Jail": [
+            5,
+            12
+          ]
+        }
+      },
+      {
         "id": "425",
         "title": "POSIADANIE LUB UŻYWANIE NIELEGALNYCH KOMPONENTÓW BRONI PALNEJ",
         "categories": [
@@ -2164,6 +2416,24 @@
     "chapter": "Rozdział VI - Przestępstwa przeciwko mieniu CIVIL CODE.",
     "articles": [
       {
+        "id": "450",
+        "title": "WTARGNIĘCIE (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która dokonuje nielegalnego wejścia na posesję lub obszar zarejestrowany prawnie, będący pod zarządzaniem przydzielonego prawem właściciela i robi to świadomie lub nieświadomie.\n\nJest interpretowane jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 1 do 2 miesięcy i/lub grzywną nie przekraczającą 400 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            400
+          ],
+          "Jail": [
+            1,
+            2
+          ]
+        }
+      },
+      {
         "id": "451",
         "title": "NISZCZENIE MIENIA PAŃSTWOWEGO",
         "categories": [
@@ -2200,6 +2470,24 @@
         }
       },
       {
+        "id": "453",
+        "title": "WŁAMANIE (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która dokonuje lub próbuje się włamać do czyjejś posesji lub pojazdu.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 2 do 4 miesięcy i/lub grzywną nie przekraczającą 500 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            500
+          ],
+          "Jail": [
+            2,
+            4
+          ]
+        }
+      },
+      {
         "id": "454",
         "title": "WŁAMANIE Z UŻYCIEM SPECJALISTYCZNYCH NARZĘDZI",
         "categories": [
@@ -2218,6 +2506,42 @@
         }
       },
       {
+        "id": "455",
+        "title": "PRÓBA WŁAMANIA (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która w swoim zamiarze ma na celu włamanie się do pojazdu lub budynku prywatnego lub rządowego celem uzyskania korzyści majątkowej lub dokonania innego przestępstwa.\n\nJest interpretowane jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 1 do 3 miesięcy i/lub grzywną nie przekraczającą 500 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            500
+          ],
+          "Jail": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "id": "456",
+        "title": "KRADZIEŻ (M)",
+        "categories": [
+          "M"
+        ],
+        "description": "Każda osoba, która kradnie dobro materialne należące do innej osoby lub instytucji rządowej, lub do innej ustanowionej prawem własności.\n\nJest interpretowane jako MISDEMEANOR.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 1 do 2 miesięcy i/lub grzywną nie przekraczającą 200 USD.",
+        "penalties": {
+          "USD": [
+            0,
+            200
+          ],
+          "Jail": [
+            1,
+            2
+          ]
+        }
+      },
+      {
         "id": "457",
         "title": "PRZYWŁASZCZENIE",
         "categories": [
@@ -2232,6 +2556,61 @@
           "Jail": [
             0,
             0
+          ]
+        }
+      },
+      {
+        "id": "458",
+        "title": "PODPALENIE (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która wznieca ogień celem podpalenia rzeczy lub posiadłości należącej do innej osoby lub instytucji.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 3 do 6 miesięcy.",
+        "penalties": {
+          "USD": [
+            0,
+            0
+          ],
+          "Jail": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "id": "459",
+        "title": "PRÓBA PODPALENIA (F)",
+        "categories": [
+          "F"
+        ],
+        "description": "Każda osoba, która próbuje wzniecić ogień celem podpalenia rzeczy lub posiadłości należącej do innej osoby lub instytucji ale nie osiąga swojego celu.\n\nJest interpretowane jako FELONY.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 2 do 5 miesięcy.",
+        "penalties": {
+          "USD": [
+            0,
+            0
+          ],
+          "Jail": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "id": "460",
+        "title": "WANDALIZM (M) (I)",
+        "categories": [
+          "M",
+          "I"
+        ],
+        "description": "Każda osoba, która niszczy, dewastuje lub zanieczyszcza dobro wspólne lub użytku publicznego. Na przykład wyrzuca śmieci na chodnik, lub maluje ściany puszką z farbą.\n\nJest interpretowane jako MISDEMEANOR jeśli dotyczy przewinień ciężkich takich jak zniszczenie infrastruktury miasta nieodwracalnie.\n\nJest interpretowane jako INFRACTION jeśli dotyczy przewinień lekkich takich jak malowanie farbą po ścianach, wyrzucanie śmieci.\n\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą pozbawienia wolności od 1 do 2 miesięcy w przypadku MISDEMEANOR.\nZa popełnienie tego przestępstwa osoba winna zagrożona jest karą grzywny nieprzekraczającej 500 USD w przypadku INFRACTION.",
+        "penalties": {
+          "USD": [
+            0,
+            500
+          ],
+          "Jail": [
+            1,
+            2
           ]
         }
       }
